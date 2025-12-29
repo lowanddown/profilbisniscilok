@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Langganan Santuy - Streaming Premium, Harga Santai</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #111;
+      --accent: #fff;
+      --gray: #222;
+      --btn: #e50914;
+      --spotify: #1db954;
+      --youtube: #ff0000;
+      --premium: #f3c623;
+      --shadow: 0 4px 24px rgba(0,0,0,0.15);
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: var(--primary);
+      color: var(--accent);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    header {
+      padding: 2rem 0 1rem 0;
+      text-align: center;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: .75rem;
+      margin-bottom: .5rem;
+    }
+    .logo-icon {
+      width: 40px;
+      height: 40px;
+      background: linear-gradient(135deg, var(--premium), var(--btn));
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.7em;
+      font-weight: bold;
+      color: var(--gray);
+      box-shadow: var(--shadow);
+    }
+    h1 {
+      font-size: 2.1rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      margin-bottom: .5rem;
+    }
+    .tagline {
+      font-size: 1.08rem;
+      color: #bbb;
+      margin-bottom: 1.5rem;
+      font-style: italic;
+    }
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin: 2rem 0 2.5rem 0;
+    }
+    .card {
+      background: var(--gray);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+      width: 170px;
+      padding: 1.5rem 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: .5rem;
+      transition: transform .2s;
+    }
+    .card:hover {
+      transform: scale(1.06) rotate(-2deg);
+    }
+    .card-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2em;
+      margin-bottom: .2rem;
+    }
+    .netflix {background: var(--btn);}
+    .spotify {background: var(--spotify);}
+    .youtube {background: var(--youtube);}
+    .premium {background: var(--premium); color: #222;}
+    .card-title {
+      font-size: 1.08rem;
+      font-weight: 700;
+      margin-bottom: .2rem;
+      text-align: center;
+    }
+    .card-desc {
+      font-size: .95rem;
+      color: #bbb;
+      text-align: center;
+      margin-bottom: .1rem;
+    }
+    .card-price {
+      font-weight: bold;
+      margin-top: .3rem;
+      color: var(--premium);
+      font-size: 1.05rem;
+    }
+    .contact {
+      background: var(--gray);
+      border-radius: 16px;
+      padding: 1.2rem 1.3rem;
+      box-shadow: var(--shadow);
+      margin-bottom: 2.5rem;
+      text-align: center;
+      font-size: 1.02rem;
+    }
+    .contact b {
+      color: var(--premium);
+      font-size: 1.08em;
+    }
+    footer {
+      color: #888;
+      font-size: .95rem;
+      padding-bottom: 1.2rem;
+      text-align: center;
+      margin-top: auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <div class="logo-icon">🍿</div>
+      <span style="font-size:1.6rem;font-weight:700">Langganan Santuy</span>
+    </div>
+    <h1>Streaming Premium, Hidup Santai</h1>
+    <div class="tagline">
+      Gak perlu jadi sultan buat nonton dan dengerin yang premium.<br>
+      Santuy aja, dompet tetap aman, hati tetap senang!
+    </div>
+  </header>
+  <section class="services">
+    <div class="card">
+      <div class="card-icon netflix">
+        <!-- Netflix Logo SVG -->
+        <svg width="32" height="32" viewBox="0 0 32 32"><rect x="10" y="5" width="4" height="22" rx="2" fill="#fff"/><rect x="18" y="5" width="4" height="22" rx="2" fill="#fff"/></svg>
+      </div>
+      <div class="card-title">Netflix Premium</div>
+      <div class="card-desc">Nonton tanpa drama buffering, kecuali drama Korea!</div>
+      <div class="card-price">Mulai 39K/bulan</div>
+    </div>
+    <div class="card">
+      <div class="card-icon spotify">
+        <!-- Spotify Logo SVG -->
+        <svg width="32" height="32" viewBox="0 0 32 32"><circle cx="16" cy="16" r="14" fill="#fff"/><path d="M9 22a9 9 0 0 1 14 0" stroke="#1db954" stroke-width="2" fill="none"/></svg>
+      </div>
+      <div class="card-title">Spotify Premium</div>
+      <div class="card-desc">Musik bebas iklan, cocok buat mantan yang selalu skip.</div>
+      <div class="card-price">Mulai 25K/bulan</div>
+    </div>
+    <div class="card">
+      <div class="card-icon youtube">
+        <!-- YouTube Logo SVG -->
+        <svg width="32" height="32" viewBox="0 0 32 32"><rect x="4" y="9" width="24" height="14" rx="5" fill="#fff"/><polygon points="15,13 22,16 15,19" fill="#ff0000"/></svg>
+      </div>
+      <div class="card-title">YouTube Premium</div>
+      <div class="card-desc">Skip iklan, skip drama, langsung viral!</div>
+      <div class="card-price">Mulai 29K/bulan</div>
+    </div>
+    <div class="card">
+      <div class="card-icon premium">
+        <!-- Other Services Icon -->
+        <svg width="32" height="32" viewBox="0 0 32 32"><circle cx="16" cy="16" r="13" fill="#222"/><text x="16" y="21" text-anchor="middle" font-size="18" fill="#f3c623" font-family="Arial">+</text></svg>
+      </div>
+      <div class="card-title">Layanan Lainnya</div>
+      <div class="card-desc">Disney+, Apple Music, Viu, dan lain-lain. Santuy bareng, harga tetap waras!</div>
+      <div class="card-price">Mulai 15K/bulan</div>
+    </div>
+  </section>
+  <section class="contact">
+    <b>Yuk, tanya-tanya atau langsung langganan:</b><br>
+    <span>Telegram: <a href="https://t.me/LanaDelvRed" style="color:#f3c623;text-decoration:none" target="_blank">ORDER TELEGRAM</a></span><br>
+    <span>WhatsApp: <a href="https://wa.me/+6289519159638" style="color:#f3c623;text-decoration:none" target="_blank">ORDER WHATSAPP</a></span><br>
+    <span style="font-size:.97em;color:#bbb;">(Fast respon, slow motion cuma di video)</span>
+  </section>
+  <footer>
+    &copy; 2025 Langganan Santuy 🍿 | Hidup santai, streaming tetap jalan!
+  </footer>
+</body>
+</html>
